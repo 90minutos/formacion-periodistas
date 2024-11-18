@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación para periodistas en herramientas de verificación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white shadow-lg rounded-lg p-4 w-full max-w-5xl">
+    <div class="flex">
+      <!-- Video Player -->
+      <div class="w-2/3 pr-4">
+        <video id="videoPlayer" controls class="w-full rounded-lg shadow-md">
+          <source id="videoSource" src="00:08:42.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Video List -->
+      <div class="w-1/3">
+        <h1 class="text-lg font-semibold mb-4">Formación para periodistas en herramientas de verificación</h1>
+        <span>Fuente: Fundacion Luca de Tena</span>
+        <ul class="space-y-3">
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:08:42.mp4')">
+              Introducción
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:14:17.mp4')">
+              Búsqueda exacta " "
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:16:10.mp4')">
+              Excluir -
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:20:17.mp4')">
+              Comodín *
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:24:18.mp4')">
+              Filetype
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:28:15.mp4')">
+              Site
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:31:33.mp4')">
+              Around(x)
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:41:33.mp4')">
+              Inurl
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('00:55:28.mp4')">
+              Búsqueda inversa de imágenes
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('01:05:52.mp4')">
+              Búsqueda geolocalizada
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('01:09:07.mp4')">
+              Google Journalist Studio: Fact Check Explorer
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('01:19:33.mp4')">
+              Google Journalist Studio: Pinpoint
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('01:27:33.mp4')">
+              Verificación: Twitter Boot
+            </button>
+          </li>
+          <li>
+            <button 
+              class="w-full text-left bg-gray-100 hover:bg-gray-200 p-2 rounded-lg focus:outline-none"
+              onclick="changeVideo('01:50:30.mp4')">
+              Casos prácticos
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Function to change the video
+    function changeVideo(url) {
+      const videoPlayer = document.getElementById('videoPlayer');
+      const videoSource = document.getElementById('videoSource');
+      videoSource.src = url;
+      videoPlayer.load();
+      videoPlayer.play();
+    }
+  </script>
+</body>
+</html>
